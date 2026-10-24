@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c14"/>
+      <stop offset="100%" stop-color="#0d1726"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#132136"/>
+      <stop offset="100%" stop-color="#0a121e"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Studio Frame -->
+  <rect x="30" y="30" width="1140" height="640" rx="12" fill="#09111c" stroke="#1f324d" stroke-width="2" />
+
+  <!-- Window Header -->
+  <rect x="30" y="30" width="1140" height="52" rx="12" fill="#0f1a2a" />
+  <circle cx="60" cy="56" r="7" fill="#ff5f56" />
+  <circle cx="85" cy="56" r="7" fill="#ffbd2e" />
+  <circle cx="110" cy="56" r="7" fill="#27c93f" />
+
+  <!-- Title -->
+  <text x="140" y="62" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="bold">
+    🌐 NMOSIS09Forge Pro v1.0.0 — AMWA NMOS IS-09 System Discovery &amp; Node Bootstrapping Studio
+  </text>
+  <rect x="990" y="44" width="160" height="26" rx="6" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="1" />
+  <text x="1005" y="62" fill="#06b6d4" font-family="monospace" font-size="12" font-weight="bold">10/10 PASS • IS-09 v1.0</text>
+
+  <!-- Nav Tabs -->
+  <rect x="50" y="102" width="1100" height="42" rx="8" fill="#0d1726" stroke="#1f324d" stroke-width="1" />
+  <rect x="54" y="106" width="260" height="34" rx="6" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.5" />
+  <text x="75" y="128" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">1. Global Config (/global)</text>
+  
+  <text x="350" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">2. Zero-Conf Discovery</text>
+  <text x="630" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">3. Node Bootstrapping Simulator</text>
+  <text x="910" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">4. 10-Point Normative Auditor</text>
+
+  <!-- Main Card: Studio Dashboard -->
+  <rect x="50" y="162" width="1100" height="485" rx="10" fill="url(#cardGrad)" stroke="#22334f" stroke-width="1" />
+
+  <!-- Left Column: Global System Parameters -->
+  <rect x="75" y="185" width="480" height="435" rx="8" fill="#0c1626" stroke="#1c2d46" stroke-width="1.5" />
+  <text x="95" y="215" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold">System Global Endpoint Parameters</text>
+  <text x="95" y="235" fill="#64748b" font-family="monospace" font-size="11">GET /x-nmos/system/v1.0/global</text>
+
+  <rect x="95" y="255" width="440" height="60" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="110" y="278" fill="#94a3b8" font-family="monospace" font-size="11">System ID (UUIDv4):</text>
+  <text x="110" y="298" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="bold">9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d</text>
+
+  <!-- PTP & Syslog -->
+  <rect x="95" y="325" width="210" height="110" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="105" y="348" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">IEEE 1588 / SMPTE ST 2059-2</text>
+  <text x="105" y="372" fill="#e2e8f0" font-family="monospace" font-size="11">Domain: <tspan fill="#06b6d4" font-weight="bold">127</tspan></text>
+  <text x="105" y="392" fill="#e2e8f0" font-family="monospace" font-size="11">Announce Log: <tspan fill="#06b6d4">-2</tspan></text>
+  <text x="105" y="412" fill="#e2e8f0" font-family="monospace" font-size="11">Sync Log: <tspan fill="#06b6d4">-3 (8 sync/s)</tspan></text>
+
+  <rect x="325" y="325" width="210" height="110" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="335" y="348" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">Facility Syslog &amp; Telemetry</text>
+  <text x="335" y="372" fill="#e2e8f0" font-family="monospace" font-size="11">Host: <tspan fill="#f59e0b">syslog.prod.tv</tspan></text>
+  <text x="335" y="392" fill="#e2e8f0" font-family="monospace" font-size="11">Port: <tspan fill="#f59e0b">514 (UDP)</tspan></text>
+  <text x="335" y="412" fill="#10b981" font-family="monospace" font-size="11">Status: Active Stream</text>
+
+  <!-- IS-04 Registration Failover Array -->
+  <rect x="95" y="445" width="440" height="155" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="110" y="470" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">IS-04 Registration APIs (Failover Array):</text>
+  
+  <rect x="110" y="482" width="410" height="30" rx="4" fill="#0e1a2b" stroke="#059669" stroke-width="1" />
+  <text x="120" y="502" fill="#10b981" font-family="monospace" font-size="11">P100 • Primary: https://reg-east.prod.tv/x-nmos/registration/v1.3</text>
+
+  <rect x="110" y="518" width="410" height="30" rx="4" fill="#0e1a2b" stroke="#0284c7" stroke-width="1" />
+  <text x="120" y="538" fill="#38bdf8" font-family="monospace" font-size="11">P200 • Secondary: https://reg-west.prod.tv/x-nmos/registration/v1.3</text>
+
+  <rect x="110" y="554" width="410" height="30" rx="4" fill="#0e1a2b" stroke="#64748b" stroke-width="1" />
+  <text x="120" y="574" fill="#94a3b8" font-family="monospace" font-size="11">P300 • Disaster Recovery: https://dr-reg.prod.tv/x-nmos/registration/v1.3</text>
+
+  <!-- Right Column: Zero-Conf Mechanisms & Node Bootstrapping -->
+  <rect x="580" y="185" width="545" height="435" rx="8" fill="#0c1626" stroke="#1c2d46" stroke-width="1.5" />
+  <text x="600" y="215" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold">Zero-Configuration Discovery &amp; Bootstrapping</text>
+  <text x="600" y="235" fill="#64748b" font-family="monospace" font-size="11">RFC 8910 (DHCP 114) &amp; RFC 6763 (DNS-SD)</text>
+
+  <!-- DHCP Option 114 Card -->
+  <rect x="600" y="255" width="505" height="85" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="615" y="278" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="bold">1. DHCP Option 114 (Captive-Portal / URL)</text>
+  <text x="615" y="300" fill="#e2e8f0" font-family="monospace" font-size="11">URL: http://is09.prod.tv/x-nmos/system/v1.0</text>
+  <text x="615" y="322" fill="#94a3b8" font-family="monospace" font-size="10">Hex: 72 3a 68 74 74 70 3a 2f 2f 69 73 30 39 2e 70 72 6f 64 2e 74 76 2f ...</text>
+
+  <!-- DNS-SD Record Card -->
+  <rect x="600" y="350" width="505" height="85" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="615" y="373" fill="#a855f7" font-family="sans-serif" font-size="12" font-weight="bold">2. DNS-SD Service Discovery (_nmos-system._tcp)</text>
+  <text x="615" y="395" fill="#e2e8f0" font-family="monospace" font-size="11">PTR: _nmos-system._tcp.local. → nmos-system._nmos-system._tcp.local.</text>
+  <text x="615" y="417" fill="#94a3b8" font-family="monospace" font-size="10">TXT: api_ver=v1.0,v1.1, api_proto=http, pri=100, api_selector=/global</text>
+
+  <!-- Node Bootstrapping Progress Bar & Simulation -->
+  <rect x="600" y="445" width="505" height="155" rx="6" fill="#111f33" stroke="#233854" stroke-width="1" />
+  <text x="615" y="470" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="bold">3. Node Bootstrapping Pipeline (Live Emulation)</text>
+  
+  <circle cx="630" cy="505" r="10" fill="#10b981" />
+  <text x="630" y="509" fill="#000" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">✓</text>
+  <text x="650" y="510" fill="#e2e8f0" font-family="sans-serif" font-size="11">DHCP Option 114 Received</text>
+
+  <circle cx="630" cy="535" r="10" fill="#10b981" />
+  <text x="630" y="539" fill="#000" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">✓</text>
+  <text x="650" y="540" fill="#e2e8f0" font-family="sans-serif" font-size="11">Global Config Ingested: PTP Domain 127 locked</text>
+
+  <circle cx="630" cy="565" r="10" fill="#10b981" />
+  <text x="630" y="569" fill="#000" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">✓</text>
+  <text x="650" y="570" fill="#10b981" font-family="sans-serif" font-size="11" font-weight="bold">IS-04 Node Registered to Primary Registry (P100)</text>
+</svg>
